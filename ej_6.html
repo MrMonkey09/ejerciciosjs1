@@ -24,7 +24,7 @@
             class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
             <h2 class="text-center mx-3 my-1 text-white">
                 <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
-                Solución Ejercicio N°3
+                Solución Ejercicio N°6
             </h2>
         </div>
     </header>
@@ -33,15 +33,23 @@
         <div
             class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
             <h2>Desarrollo:</h2>
-            <h4 class="border border-info border-5 rounded">let usuario = prompt("Ingrese su nombre de USUARIO");
-                <br>let email = prompt("Ingrese su EMAIL");<br>
-
-                <br>document.write("h3>", usuario, "/h3>");
-                <br>document.write("h3>", email, "/h3>");
+            <h4 class="border border-info border-5 rounded">let n1,n2,n3,n4;<br>
+                var suma,producto;<br>
+                
+                <br>n1 = parseFloat(prompt('Ingrese el primer número'));<br>
+                n2 = parseFloat(prompt('Ingrese el segundo número'));<br>
+                n3 = parseFloat(prompt('Ingrese el tercer número'));<br>
+                n4 = parseFloat(prompt('Ingrese el cuarto número'));<br>
+                suma = n1+n2+n3+n4;<br>
+                producto = n1*n2*n3*n4;<br>
+                
+                <br>document.write('h3>Los números ingresados son: ',parseFloat(n1),' | ',parseFloat(n2),' | ',parseFloat(n3),' | ',parseFloat(n4),'/h3>');<br>
+                document.write('h3>La suma entre todos los números es: ',suma,'/h3>');<br>
+                document.write('h3>El producto entre todos los números es: ',producto,'/h3>');
             </h4>
             <h2>Resultado:</h2>
             <div class="my-2 border border-info border-5 rounded">
-                <script src="js/ej_3.js"></script>
+                <script src="js/ej_6.js"></script>
             </div>
         </div>
     </section>

@@ -24,7 +24,7 @@
             class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
             <h2 class="text-center mx-3 my-1 text-white">
                 <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
-                Solución Ejercicio N°3
+                Solución Ejercicio N°7
             </h2>
         </div>
     </header>
@@ -33,15 +33,20 @@
         <div
             class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
             <h2>Desarrollo:</h2>
-            <h4 class="border border-info border-5 rounded">let usuario = prompt("Ingrese su nombre de USUARIO");
-                <br>let email = prompt("Ingrese su EMAIL");<br>
-
-                <br>document.write("h3>", usuario, "/h3>");
-                <br>document.write("h3>", email, "/h3>");
+            <h4 class="border border-info border-5 rounded">let precioArticulo,cantidadArticulo;<br>
+                var total;<br>
+                
+                <br>precioArticulo = parseFloat(prompt('Ingrese el precio del articulo'));<br>
+                cantidadArticulo = parseFloat(prompt('Ingrese la cantidad a vender'));<br>
+                total = precioArticulo*cantidadArticulo;<br>
+                
+                <br>document.write('h3>El valor del articulo es: ',parseFloat(precioArticulo),'/h3>');<br>
+                document.write('h3>La cantidad a vender es: ',parseFloat(cantidadArticulo),'/h3>');<br>
+                document.write('h3>El total de la venta es: ',total,'/h3>');
             </h4>
             <h2>Resultado:</h2>
             <div class="my-2 border border-info border-5 rounded">
-                <script src="js/ej_3.js"></script>
+                <script src="js/ej_7.js"></script>
             </div>
         </div>
     </section>
