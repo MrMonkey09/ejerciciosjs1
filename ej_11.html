@@ -24,7 +24,7 @@
             class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
             <h2 class="text-center mx-3 my-1 text-white">
                 <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
-                Solución Ejercicio N°2
+                Solución Ejercicio N°11
             </h2>
         </div>
     </header>
@@ -33,14 +33,47 @@
         <div
             class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
             <h2>Desarrollo:</h2>
-            <h4 class="border border-info border-5 rounded">var nombreEmpleado="Francisco Kolkc";
-                <br>var sueldoEmpleado=650000;<br>
-                <br>document.write("h2>Nombre del Empleado: ",nombreEmpleado,"/h2>");
-                <br>document.write("h2>Sueldo del Empelado: ",sueldoEmpleado,"/h2>");
+            <h4 class="border border-info border-5 rounded">let menor, mayor;<br>
+                var ok;<br>
+                
+                <br>menor = 0;<br>
+                mayor = 0;<br>
+                ok = "ok";<br>
+                
+                <br>function menorMayor() {<br>
+                    prompt('Ingrese 2 números para ordenar de menor a mayor, ingresando primero el número menor',ok);<br>
+                    let n1 = parseInt(prompt('Ingrese el número menor'));<br>
+                    let n2 = parseInt(prompt('Ingrese el número mayor'));<br>
+
+                    <br>document.write('h3>Números ingresados: ', n1, ' | ', n2, '/h3>');<br>
+                    document.write('h3>Impresion de menor a mayor/h3>');<br>
+                    
+                    <br>for (let i = 1; i = 2; i++) {<br>
+                        if (i  2) {<br>
+                            if (n1  n2) {<br>
+                                menor = n1;<br>
+                            }<br>
+                            else {<br>
+                                menor = n2;<br>
+                            }<br>
+                            document.write('h3>-', menor, '-/h3>');<br>
+                        }<br>
+                        else {<br>
+                            if (n2 > n1) {<br>
+                                mayor = n2;<br>
+                            }<br>
+                            else {<br>
+                                mayor = n1;<br>
+                            }<br>
+                            document.write('h3>-', mayor, '-/h3>');}<br>
+                    }<br>
+                }<br>
+                
+                <br>menorMayor();                
             </h4>
             <h2>Resultado:</h2>
             <div class="my-2 border border-info border-5 rounded">
-                <script src="js/ej_2.js"></script>
+                <script src="js/ej_11.js"></script>
             </div>
         </div>
     </section>

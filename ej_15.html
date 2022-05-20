@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolucion Guia 1 JS</title>
+    <!-- Enlaces CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="css/estilos.css" rel="stylesheet">
+    <!-- Enlaces JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/ej_15.js"></script>
+    <!-- Otros Enlaces -->
+</head>
+
+<body>
+    <header class="mx-4 my-2">
+        <div
+            class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
+            <h2 class="text-center mx-3 my-1 text-white">
+                <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
+                Solución Ejercicio N°15
+            </h2>
+        </div>
+    </header>
+
+    <section class="mx-2 my-2">
+        <div
+            class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
+            <h2>Desarrollo:</h2>
+            <h4 class="border border-info border-5 rounded">function calcularPresupuesto() {<br>
+                <br>let elemento1 = document.getElementById('procesador')<br>
+                let precio1 = elemento1.options[elemento1.selectedIndex].value;<br>
+                let elemento2 = document.getElementById('monitor')<br>
+                let precio2 = elemento2.options[elemento2.selectedIndex].value;<br>
+                let elemento3 = document.getElementById('hdd')<br>
+                let precio3 = elemento3.options[elemento3.selectedIndex].value;<br>
+                <br>precio1 = parseFloat(precio1);<br>
+                precio2 = parseFloat(precio2);<br>
+                precio3 = parseFloat(precio3);<br>
+                <br>let suma = precio1 + precio2 + precio3;<br>
+                document.getElementById('resultado').value = suma;
+                }
+            </h4>
+            <h2>Resultado:</h2>
+            <div class="my-2 border border-info border-5 rounded">
+                <form>
+                    <fieldset>
+                        <legend>Menu de seleccion</legend>
+                        <label for="procesador">Elige un procesador:</label>
+                        <select name="procesador" id="procesador" form="proceform">
+                            <option value="0">-</option>
+                            <option value="400">Intel I3 - $400</option>
+                            <option value="600">Intel I5 - $600</option>
+                            <option value="800">Intel I7 - $800</option>
+                        </select>
+                        <br>
+                        <label for="monitor">Elige un monitor:</label>
+                        <select name="monitor" id="monitor" form="monitform">
+                            <option value="0">-</option>
+                            <option value="250">Samsung 20' - $250</option>
+                            <option value="350">Samsung 22' - $350</option>
+                            <option value="550">Samsung 26' - $550</option>
+                        </select>
+                        <br>
+                        <label for="hdd">Elige un disco duro:</label>
+                        <select name="hdd" id="hdd" form="hddform">
+                            <option value="0">-</option>
+                            <option value="300">500 Gb - $300</option>
+                            <option value="440">1 Tb - $440</option>
+                            <option value="500">3 Tb - $500</option>
+                        </select>
+                        <br>
+                        <input type="button" value="Calcular Presupuesto" onClick="calcularPresupuesto()">
+                        <input type="text" id="resultado">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mx-4 my-2">
+        <a href="index.html"
+            class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center btn">
+            <h2 class="text-center mx-3 my-1 text-white">
+                <img src="img\home_btn.png" class="img-fluid ico rounded-circle" alt="logo-header">
+                Volver al Inicio
+            </h2>
+        </a>
+    </footer>
+</body>
+
+</html>

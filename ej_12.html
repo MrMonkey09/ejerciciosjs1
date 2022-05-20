@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolucion Guia 1 JS</title>
+    <!-- Enlaces CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="css/estilos.css" rel="stylesheet">
+    <!-- Enlaces JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Otros Enlaces -->
+</head>
+
+<body>
+    <header class="mx-4 my-2">
+        <div
+            class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
+            <h2 class="text-center mx-3 my-1 text-white">
+                <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
+                Solución Ejercicio N°12
+            </h2>
+        </div>
+    </header>
+
+    <section class="mx-2 my-2">
+        <div
+            class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
+            <h2>Desarrollo:</h2>
+            <h4 class="border border-info border-5 rounded">let menor, mayor, promedio;<br>
+                var listaN;<br>
+                
+                <br>listaN = [];<br>
+                menor = 0;<br>
+                mayor = 0;<br>
+                promedio = 0;<br>
+                
+                <br>function menorMayor(listaN) {<br>
+                    document.write('h3>Números ingresados/h3>');<br>
+                    document.write('h3>', listaN[0], ' | ', listaN[1], ' | ', listaN[2], '/h3>');<br>
+                    
+                    <br>document.write(h3>Proceso de organizacion/h3>');<br>
+                    for (let i = 0; i  3; i++) {<br>
+                        if (i == 0) {<br>
+                            menor = listaN[i];<br>
+                            document.write('h3>Número menor de referencia definido: ', menor, '/h3>');<br>
+                            promedio = listaN[i];<br>
+                            document.write('h3>Número promedio de referencia definido: ', promedio, '/h3>');<br>
+                            mayor = listaN[i];<br>
+                            document.write('h3>Número mayor de referencia definido: ', mayor, '/h3>');<br>
+                        }<br>
+                        <br>else {<br>
+                            if (listaN[i]  menor && listaN[i]  promedio) {<br>
+                                promedio = menor;<br>
+                                menor = listaN[i];<br>
+                                document.write('h3>Número menor actualizado: ', menor, '/h3>');<br>
+                            }<br>
+                            if (listaN[i] > mayor && listaN[i] > promedio) {<br>
+                                promedio = mayor;<br>
+                                mayor = listaN[i];<br>
+                                document.write('h3>Número mayor actualizado: ', mayor, '/h3>');<br>
+                            }<br>
+                            if (listaN[i]  mayor && listaN[i] > menor) {<br>
+                                promedio = listaN[i];<br>
+                                document.write('h3>Número promedio actualizado: ', promedio, '/h3>');<br>
+                            }<br>
+                        }<br>
+                    }<br>
+                    <br>document.write('br>');<br>
+                    document.write('h3>Impresion de números en orden menor a mayor/h3>');<br>
+                    document.write('h3>', menor,' | ',promedio,' | ', mayor, '/h3>');<br>
+                }<br>
+                
+                <br>for (let i = 0; i  3; i++) {<br>
+                    let n = parseInt(prompt('Ingrese un número'));<br>
+                    listaN.push(n);<br>
+                }<br>
+                menorMayor(listaN);<br>
+            </h4>
+            <h2>Resultado:</h2>
+            <div class="my-2 border border-info border-5 rounded">
+                <script src="js/ej_12.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mx-4 my-2">
+        <a href="index.html"
+            class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center btn">
+            <h2 class="text-center mx-3 my-1 text-white">
+                <img src="img\home_btn.png" class="img-fluid ico rounded-circle" alt="logo-header">
+                Volver al Inicio
+            </h2>
+        </a>
+    </footer>
+</body>
+
+</html>

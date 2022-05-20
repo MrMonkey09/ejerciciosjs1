@@ -24,7 +24,7 @@
             class="container-md bg-primary bg-gradient border border-info border-4 rounded-pill nav justify-content-center">
             <h2 class="text-center mx-3 my-1 text-white">
                 <img src="img\logo.png" class="img-fluid ico rounded-circle" alt="logo-header">
-                Solución Ejercicio N°2
+                Solución Ejercicio N°17
             </h2>
         </div>
     </header>
@@ -33,14 +33,41 @@
         <div
             class="container-fluid bg-primary bg-gradient border border-info border-4 rounded justify-content-center ej">
             <h2>Desarrollo:</h2>
-            <h4 class="border border-info border-5 rounded">var nombreEmpleado="Francisco Kolkc";
-                <br>var sueldoEmpleado=650000;<br>
-                <br>document.write("h2>Nombre del Empleado: ",nombreEmpleado,"/h2>");
-                <br>document.write("h2>Sueldo del Empelado: ",sueldoEmpleado,"/h2>");
+            <h4 class="border border-info border-5 rounded">let numeros, n;<br>
+                var suma;<br>
+                
+                <br>numeros = [];<br>
+                suma = 0;<br>
+                
+                <br>function ingresarValores() {<br>
+                    for (i = 0; i  2; i++) {<br>
+                        n = prompt('Ingrese un valor');<br>
+                        while (true) {<br>
+                            if (!isNaN(n) && n != null && n != "") {<br>
+                                break;<br>
+                            }<br>
+                            else {<br>
+                                n = prompt('Valor ingresado erroneo, ingrese un valor NUMERICO por favor');<br>
+                            }<br>
+                        }<br>
+                        numeros.push(parseFloat(n));<br>
+                        document.write('h3>Valor ', (i + 1), ' ingresado: ', n, '/h3>');<br>
+                    };<br>
+                }<br>
+                
+                <br>function sumaNum() {<br>
+                    numeros.forEach(function (elemento) {<br>
+                        suma = suma + elemento;<br>
+                    })<br>
+                    document.write('h3>Valor total de tus 2 números: ', suma, '/h3>');<br>
+                }<br>
+                
+                <br>ingresarValores();<br>
+                sumaNum();
             </h4>
             <h2>Resultado:</h2>
             <div class="my-2 border border-info border-5 rounded">
-                <script src="js/ej_2.js"></script>
+                <script src="js/ej_17.js"></script>
             </div>
         </div>
     </section>
