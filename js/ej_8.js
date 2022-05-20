@@ -7,7 +7,7 @@ añosAntigüedad = parseFloat(prompt('Ingrese los años de antigüedad del Opera
 
 if (sueldoOperario < 500000 && añosAntigüedad >= 10) {
     aumento = 20;
-    sueldoTotal = (aumento * sueldoOperario) / 100;
+    sueldoTotal = ((aumento * sueldoOperario) / 100)+sueldoOperario;
     document.write('<h3>Nombre del operario: ', nombreOperario, '</h3>');
     document.write('<h3>Sueldo: ', sueldoOperario, '</h3>');
     document.write('<h3>Años de antigüedad: ', añosAntigüedad, '</h3>');
@@ -17,7 +17,7 @@ if (sueldoOperario < 500000 && añosAntigüedad >= 10) {
 
 else if (sueldoOperario < 500000 && añosAntigüedad < 10) {
     aumento = 10;
-    sueldoTotal = (aumento * sueldoOperario) / 100;
+    sueldoTotal = ((aumento * sueldoOperario) / 100)+sueldoOperario;
     document.write('<h3>Nombre del operario: ', nombreOperario, '</h3>');
     document.write('<h3>Sueldo: ', sueldoOperario, '</h3>');
     document.write('<h3>Años de antigüedad: ', añosAntigüedad, '</h3>');
